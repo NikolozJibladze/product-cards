@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    background-color: rgb(199, 199, 199);
+}
+.product-card img{
+height: 300px;
+width: 300px;
+border-radius: 10%;
+}
+.product-card h2{
+    font-size: 50px;
+    font-family:'Courier New', Courier, monospace;
+}
+.product-card p{
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight:bold;
+}
+fieldset{
+    width: 330px;
+    padding-bottom: 0px;
+    margin-left: 100px;
+    background-color: rgb(99, 99, 99);
+    border-radius: 10%;
+}
+fieldset:hover{
+    cursor: pointer;
+    background-color: rgb(75, 75, 75);
+   }
+.menu{
+    border: none;
+    overflow: hidden;
+    float: left;
+    text-align: center;
+    background-color: rgb(100, 100, 100);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 17px;
+}   
+   @media screen and (max-width:800px){
+    .column{
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+@media screen and (max-width:600px){
+    .column{
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
